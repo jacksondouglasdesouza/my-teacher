@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./static/css/styles.css" />
+        <meta
+            name="description"
+            content="Aulas particulares , com professores que cobram por hora sem necessidade de longos contratos, aulas individuais com profissionais qualificados e especializados em suas areas de atuação."
+        />
+        <meta name="author" content="Jackson Douglas de Souza" />
+        <link
+            rel="shortcut icon"
+            href="./favicon/teacher-medium-light-skin-tone-svgrepo-com.ico"
+            type="image/x-icon"
+        />
+        <title>My English Teacher | Home</title>
+    </head>
+    <body>
+        <header>
+            <img
+                id="logo"
+                src="./static/img/logo/logoMarca-MyTeacher.svg"
+                alt="Logo marca da empresa My English Teacher"
+            />
+        </header>
+
+        <div id="log">
+            <div id="nav">
+                <ul>
+                    <li>Perguntas frequentes</li>
+                    <li>Professores</li>
+                    <li>Contatos</li>
+                    <li id="ava">AVA</li>
+                </ul>
+            </div>
+            <div id="buscar">
+                <input
+                    id="buscar-box"
+                    type="text"
+                    placeholder="Encontre um professor(a)"
+                />
+                <button id="buscar-button" type="submit">
+                    <img
+                        id="buscar-icon"
+                        src="./static/img/header/search2-svgrepo-com.svg"
+                        alt="Buscar"
+                        width="40px"
+                        height="40px"
+                    />
+                </button>
+            </div>
+
+            <!-- -->
+
+            <div id="log-login">
+                <img
+                    id="log-login-img"
+                    src="./static/img/header/profile-circle-svgrepo-com.svg"
+                    alt="Ícone de login"
+                />
+                <div id="log-p">
+                    <p id="log-p-01">Bem-vindo(a)</p>
+                    <p id="log-p-02">
+                        <span class="log-login-pointer">Entrar</span> ou
+                        <span class="log-login-pointer">Cadastrar</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="banner">
+            <img src=".../../static/img/banner/banner-principal.svg" alt="" />
+        </div>
+        <div id="square">
+            <h1>Encontre um professor para aulas particulares</h1>
+            <p>
+                Busque, encontre e faça seu orçamento com os melhores
+                professores particulares do Brasil.
+            </p>
+            <p id="p-id">
+                O formato que você precisa para um aprendizado eficiente e
+                personalizado
+            </p>
+        </div>
+
+        <!-- -->
+
+        <main>
+            <!-- TEACHER 001 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-001.svg"
+                    alt="Foto da Professora Carla Maraísa"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Carla Maraísa</strong
+                        ><span id="pag-01" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>100,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professora de física, especialista em física nuclear
+                        pela universidade estadual de são paulo - USP
+                    </p>
+                    <form class="teacher-contract">
+                        <input
+                            id="price"
+                            name="price"
+                            type="hidden"
+                            value="100"
+                        />
+                        <input
+                            name="hours"
+                            id="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof001()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 002 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-002.svg"
+                    alt="Foto da Professora Carolina da Silva"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Carolina da Silva</strong>
+                        <span id="pag-002" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>95,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professora de física, especialista em física pela
+                        universidade estadual de são paulo - USP
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price002"
+                            name="price"
+                            type="hidden"
+                            value="95"
+                        />
+                        <input
+                            id="hours002"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof002()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 003 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-003.svg"
+                    alt="Foto da Professora Laura Vasks"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Laura Vasks</strong>
+                        <span id="pag-003" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>150,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professora de Inglês, especialista em inglês pela
+                        University of Massachusetts
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price003"
+                            name="price"
+                            type="hidden"
+                            value="150"
+                        />
+                        <input
+                            id="hours003"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof003()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 004 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-004.svg"
+                    alt="Foto do Professor Pedro Scoobe"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Pedro Scoobe</strong>
+                        <span id="pag-004" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>65,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de Lógica de Programação, especialista em
+                        desenvolvimento de software pela universidade federal de
+                        santa catarina - UFSC.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price004"
+                            name="price"
+                            type="hidden"
+                            value="65"
+                        />
+                        <input
+                            id="hours004"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof004()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 005 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-005.svg"
+                    alt="Foto do Professor Luan Santana"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Luan Santana</strong>
+                        <span id="pag-005" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>68,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de Linguagem C#, especialista em
+                        desenvolvimento de software pela universidade federal de
+                        Rio grande do sul- UFRGS.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price005"
+                            name="price"
+                            type="hidden"
+                            value="68"
+                        />
+                        <input
+                            id="hours005"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof005()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 006 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-006.svg"
+                    alt="Foto da Professora Rosa Lindalva"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Rosa Lindalva</strong>
+                        <span id="pag-006" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>96,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de Biologia, especialista em biologia
+                        molecular pela universidade federal de São Paulo -
+                        UNIFESP.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price006"
+                            name="price"
+                            type="hidden"
+                            value="96"
+                        />
+                        <input
+                            id="hours006"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof006()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 007 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-007.svg"
+                    alt="Foto do Professor Lucas do Santos"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Lucas do Santos</strong>
+                        <span id="pag-007" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>110,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de Matemática, especialista em matemática
+                        computacional pela universidade estadual de são paulo -
+                        USP
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price007"
+                            name="price"
+                            type="hidden"
+                            value="110"
+                        />
+                        <input
+                            id="hours007"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof007()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 008 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-008.svg"
+                    alt="Foto da Professora Luana de Souza"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Luana de Souza</strong>
+                        <span id="pag-008" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>200,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professora de Administração de Empresas, especialista em
+                        gestão comercial pela PUC -PR.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price008"
+                            name="price"
+                            type="hidden"
+                            value="200"
+                        />
+                        <input
+                            id="hours008"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof008()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 009 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-009.svg"
+                    alt="Foto da Professora Cibele Koch"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Cibele Koch</strong>
+                        <span id="pag-009" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>75,00</span> por hora</p>
+                    <p class="teacher-description">
+                        Professora de Português, especialista em linguas pela
+                        PUC - RS.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price009"
+                            name="price"
+                            type="hidden"
+                            value="75"
+                        />
+                        <input
+                            id="hours009"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof009()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 0010 -->
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-0010.svg"
+                    alt="Foto do Professor Cristina Moch"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Cristina Moch</strong>
+                        <span id="pag-010" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>83,50</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de literatura, especialista em lingua
+                        portuguesa pela universidade federal de santa catarina -
+                        UFSC.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price010"
+                            name="price"
+                            type="hidden"
+                            value="83.50"
+                        />
+                        <input
+                            id="hours010"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof010()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 0011 -->
+
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-0011.svg"
+                    alt="Foto do Professor Hugo Chaves"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Hugo Chaves</strong>
+                        <span id="pag-011" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>99,99</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de Python, especialista em desenvolvimento de
+                        software pela universidade federal de Rio grande do sul-
+                        UFRGS.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price011"
+                            name="price"
+                            type="hidden"
+                            value="99.99"
+                        />
+                        <input
+                            id="hours011"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof011()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- -->
+
+            <!-- TEACHER 0012 -->
+
+            <section class="teacher-container">
+                <img
+                    src="./static/img/teachers/teacher-0012.svg"
+                    alt="Foto do Professor Claudiney Lima"
+                    class="teacher-img"
+                />
+                <div class="border-id">
+                    <h2>
+                        <strong class="teacher-name">Claudiney Lima</strong>
+                        <span id="pag-012" class="pag"></span>
+                    </h2>
+                    <p class="teacher-price">R$ <span>85,70</span> por hora</p>
+                    <p class="teacher-description">
+                        Professor de Java, especialista em desenvolvimento
+                        back-end pela universidade federal de São Paulo -
+                        UNIFESP.
+                    </p>
+                    <form action="#" method="post" class="teacher-contract">
+                        <input
+                            id="price012"
+                            name="price"
+                            type="hidden"
+                            value="85.70"
+                        />
+                        <input
+                            id="hours012"
+                            name="hours"
+                            min="1"
+                            max="8"
+                            type="number"
+                            placeholder="Quantidade Horas"
+                            class="teacher-contract-hours"
+                        />
+                        <button
+                            onclick="prof012()"
+                            class="teacher-contract-button"
+                        >
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- -->
+        </main>
+        <footer>
+            <p>Desenvolvido pelo aluno:</p>
+            <a
+                href="https://www.linkedin.com/in/jacksondouglasdesouza/"
+                target="_blank"
+                >Jackson Douglas de Souza</a
+            >
+        </footer>
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=5548991668449">
+                <img
+                    id="whatsapp-logo"
+                    src="./static/img/whatsapp/whatsapp-social-media-svgrepo-com.svg"
+                    alt="whatsapp"
+                />
+            </a>
+        </div>
+        <script src="./static/js/scripts.js"></script>
+    </body>
+</html>

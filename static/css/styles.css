@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Lora:ital,wght@0,500;0,600;0,700;1,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0 auto;
+    background-color: #f1eded;
+}
+
+body{
+    max-width: 1800px;
+    min-height: 800px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+@media(max-width:950px){
+    body{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+h1{
+    font-family: 'Lora', serif;   
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #323232;
+    
+}
+
+#logo{
+    padding-top: 2rem;
+    width: 85%;
+    height: 85%;
+    margin-bottom: 50px;
+}
+
+header{
+    background-color: #f3f2f2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ***** HEADER LOG ****** */
+
+#log{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #f3f2f2;
+}
+
+#log-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 300px;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+#log-login-img{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+#log-p{
+    margin:0;
+    padding: 10px 20px;
+}
+
+#log-p-01{
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: -3px;
+    font-style: italic;
+}
+
+#log-p-02{
+    margin-top: 10px;
+    line-height: 200%;
+    list-style: 0.05em;
+}
+
+.log-login-pointer:hover{
+    cursor: pointer;
+    background-color: #023f39;
+    transition: 0.5s;
+}
+
+#buscar{
+    max-width: 500px;
+    background-color: #023f39;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+#buscar-box{
+    width: 78%;
+    border: #212121;
+    font-size: 1rem;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #212121;
+    padding: 1rem;
+    outline: none;
+
+}
+
+#buscar-button{
+    width: 22%;
+    border: none;
+    background-color: #ebeaea;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#buscar-button:hover{
+    background-color: #068072;
+    transition: 1s;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav ul > li{
+    list-style: none;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #212121;
+}
+
+
+#nav ul > li:hover{
+    background-color: #068072;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* ***** MEDIA QUERY   ***** */
+
+@media(max-width:950px){
+    #log{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        height: 400px;
+        margin: 0 30px;
+    }
+
+    #log-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        position: none;
+        margin: 0 10px;
+        right: 40px;
+        top: -160px;
+    }
+
+    
+#buscar{
+    margin-top: 150px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 10px;
+
+}
+
+#nav{
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+}
+
+#nav > ul{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#nav ul > li{
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #212121;
+    font-weight: bold;
+    
+}
+}
+/* ***** END MEDIA QUERY   ***** */
+
+/* ***** END HEADER LOG *****  */
+
+
+#banner{
+    width: 100%;
+    height: 600px;
+}
+
+#banner > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#square{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #068072;
+    width: 100%;
+    height: 400px;
+}
+
+
+#square > p{
+    font-family: 'Lora', serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 10px;
+    letter-spacing: 0.06em;
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 130%;
+}
+
+#square > #p-id{
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    line-height: 130%;
+}
+
+#square > h1{
+    color: #FFFFFF;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    line-height: 88%;
+}
+
+.pag{
+    background-color: transparent;
+    color: #002df3;
+    font-size: 0.8rem;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    font-weight: bolder;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+@media(max-width:950px){
+    #square{
+        width: 100%;
+        height: 500px;
+    }
+
+    #square h1{
+        font-size: 2.5rem;
+        line-height: 120%;
+        margin: 20px 15px;
+    }
+
+    #square > #p-id{
+        margin: 20px 10px;
+    }
+
+    #square > p{
+        margin: 20px 10px;
+    }
+}
+
+main{
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:950px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.teacher-container{
+    width: 400px;
+    margin: 30px auto;
+}
+
+@media(max-width:950px){
+    .teacher-container{
+        width: 85%;
+        margin: 30px auto;
+    }
+}
+
+.border-id{
+    border-left: 1px solid #21212157;
+    border-right: 1px solid #21212157;
+    border-bottom: 1px solid #21212157;
+    margin-top: -30px;
+    padding: 30px 10px;
+}
+
+.teacher-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teacher-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.teacher-price{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #212121;
+    font-family: 'Lora', serif;
+}
+
+span{
+    background-color: #068072;
+    padding: 2px 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 1.2rem;
+    border-radius: 10px 0 10px 0;
+}
+
+.teacher-contract{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.teacher-contract-hours{
+    width: 60%;
+    background-color: transparent;
+    color: #212112;
+    font-family: 'Hind Madurai', sans-serif;
+    outline: none;
+    border: 1px solid #21212157;
+    padding: 0.7rem;
+}
+
+.teacher-contract-button{
+    color: #FFFFFF;
+    background-color: #068072;
+    border: none;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.teacher-contract-button:hover{
+    background-color: #023f39;
+    transition: 0.6s;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #068072;
+    color: #FFFFFF;
+}
+
+footer p{
+    font-size: 1.5rem;
+    margin: 5px auto;
+}
+
+footer a{
+    margin: 5px auto;
+    text-decoration: none;
+    color: #212112;
+    padding: 10px 30px;
+    background-color: #FFFFFF;
+    border-radius: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+#whatsapp-logo{
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+@media(max-width:950px){
+    footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #whatsapp-logo{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+@media(max-width:370px){
+
+    #log{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            height: 400px;
+            margin: 0 30px;
+        }
+    
+        #log-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            position: none;
+            margin: 0 10px;
+            right: 40px;
+            top: -160px;
+        }
+    
+        
+    #buscar{
+        margin-top: 150px;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 10px;
+    
+    }
+    
+    #nav{
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 110px;
+        right: 10px;
+    }
+    
+    #nav > ul{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 5px;
+    }
+    
+    #nav ul > li{
+        list-style: none;
+        font-size: 0.8rem;
+        font-family: 'Hind Madurai', sans-serif;
+        color: #212121;
+        font-weight: bold;
+        
+    }
+
+    #square{
+        width: 100%;
+        height: 600px;
+    }
+
+    #square h1{
+        font-size: 2rem;
+        line-height: 110%;
+        margin: 20px 15px;
+    }
+
+    #square > #p-id{
+        margin: 20px 10px;
+    }
+
+    #square > p{
+        margin: 20px 10px;
+    }
+}
