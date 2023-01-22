@@ -303,12 +303,13 @@ header{
 }
 
 .pag{
+    margin: auto;
     background-color: transparent;
     color: #002df3;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-left: 15px;
     text-transform: uppercase;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
     font-weight: bolder;
     font-family: 'Hind Madurai', sans-serif;
 
