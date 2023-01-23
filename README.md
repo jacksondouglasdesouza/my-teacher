@@ -1,10 +1,10 @@
-# My English Teacher | Page
+# My Teacher | Page
 
 Small project made in HTML5, CSS3 and Javascript. The project makes a budget for the amount to be paid for the hours of class for each teacher selected by the student.
  
 | Project | Link |
 | ------ | ------ |
-| My English Teacher | https://bit.ly/3XLvz1O |
+| My Teacher | https://bit.ly/3XLvz1O |
 
 ## Used technologies.
 <div>
